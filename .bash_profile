@@ -1,3 +1,4 @@
+# Sublime as default editor
 export EDITOR='subl -w'
 
 # Configure colors, if available.

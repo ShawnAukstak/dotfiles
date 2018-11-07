@@ -17,6 +17,6 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = ShawnAukstak
-	email = Shawn.Aukstakalnis@gmail.com 
+	email = Shawn.Aukstakalnis@gmail.com
 [core]
 	excludesfile = /Users/shawnaukstak/.gitignore_global

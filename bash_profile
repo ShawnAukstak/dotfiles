@@ -1,4 +1,6 @@
-# Sublime as default editor
+export PATH=$PATH:/Users/shawnaukstak/github/github/bin
+export PATH=/usr/local/bin:$PATH
+
 export EDITOR='subl -w'
 
 # Configure colors, if available.

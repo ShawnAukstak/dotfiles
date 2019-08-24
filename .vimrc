@@ -15,6 +15,8 @@ let g:airline#extensions#ale#enabled = 1
 
 Plugin 'FelikZ/ctrlp-py-matcher'
 
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'w0rp/ale'
 let g:ale_linters_explicit = 1 
 let g:ale_sign_column_always = 1
@@ -67,7 +69,16 @@ Plugin 'mhinz/vim-signify'
 " ### Key bindings
 set macmeta " Allows mapping of Meta (Option) key in MacOS - MacVIM only
 
-nnoremap \ :Ack! -Q "
+"Key bindings
+let mapleader=","
+
+nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <Leader>nn :NERDTreeClose<CR>
+nnoremap <Leader>nf :NERDTreeFind<CR>
+nnoremap <Leader>be :BufExplorer<CR>
+
+nnoremap <leader>/ :Ack! -Q "
+
 autocmd FileType ruby nnoremap <D-M-p> irequire 'pry';binding.pry<Esc>
 
 " GitCommit 50/72 formatting

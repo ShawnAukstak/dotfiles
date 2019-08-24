@@ -11,6 +11,7 @@ Plugin 'surround.vim'
 Plugin 'Commentary.vim'
 Plugin 'RRethy/vim-illuminate'
 Plugin 'tpope/vim-endwise'
+Plugin 'vim-ruby/vim-ruby'
 
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#ale#enabled = 1 

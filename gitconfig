@@ -25,4 +25,4 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/shawnaukstak/.gitignore_global
-	editor = mvim
+	editor = mvim -f

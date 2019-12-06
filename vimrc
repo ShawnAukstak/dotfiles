@@ -88,6 +88,7 @@ nnoremap <Leader>be :BufExplorer<CR>
 
 nnoremap <leader>/ :Ack! -Q "
 
+" OPT + CMD + p
 autocmd FileType ruby nnoremap <D-M-p> irequire 'pry';binding.pry<Esc>
 
 " GitCommit 50/72 formatting

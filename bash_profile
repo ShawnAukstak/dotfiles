@@ -37,3 +37,6 @@ git_prompt ()
 }
 
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007";PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

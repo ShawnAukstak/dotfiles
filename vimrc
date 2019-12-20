@@ -12,6 +12,7 @@ Plugin 'Commentary.vim'
 Plugin 'RRethy/vim-illuminate'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'aserebryakov/vim-todo-lists'
 
 Plugin 'terryma/vim-smooth-scroll'
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 3)<CR>
@@ -80,7 +81,6 @@ set macmeta " Allows mapping of Meta (Option) key in MacOS - MacVIM only
 
 "Key bindings
 let mapleader=","
-
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nn :NERDTreeClose<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>

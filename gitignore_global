@@ -4,3 +4,7 @@
 .DS_Store?
 *.swp
 *.swo
+
+
+# GitHub
+*github.todo

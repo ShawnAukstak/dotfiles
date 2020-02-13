@@ -14,6 +14,9 @@
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
 
+[commit]
+  template = ~/.gitmessage
+
 [user]
 	name = Shawn Aukstakalnis
 	email = ShawnAukstak@github.com

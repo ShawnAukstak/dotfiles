@@ -1,8 +1,13 @@
 [alias]
     st = status
+    ss = status --short
     ci = commit
     br = branch
     co = checkout
+    aa = add --all --verbose
+    df = diff
+    up = "!git remote update -p; git merge --ff-only @{u}"
+    mu = "!git up; git checkout master"
     df = diff
     ds = diff --staged
     lg = log -p

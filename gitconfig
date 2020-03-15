@@ -23,14 +23,14 @@
   template = ~/.gitmessage
 
 [user]
-	name = Shawn Aukstakalnis
-	email = ShawnAukstak@github.com
+  name = Shawn Aukstakalnis
+  email = ShawnAukstak@github.com
 [github]
-	user = ShawnAukstak
+  user = ShawnAukstak
 [push]
-	default = simple
+  default = simple
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	excludesfile = /Users/shawnaukstak/.gitignore_global
-	editor = mvim -f
+  excludesfile = ~/.gitignore_global
+  editor = vim

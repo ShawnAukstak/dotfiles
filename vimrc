@@ -13,19 +13,17 @@ Plugin 'RRethy/vim-illuminate'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'aserebryakov/vim-todo-lists'
+Plugin 'mhinz/vim-signify'
+Plugin 'scrooloose/nerdtree'
 
 Plugin 'terryma/vim-smooth-scroll'
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 3)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 3)<CR>
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#ale#enabled = 1 
-
-Plugin 'FelikZ/ctrlp-py-matcher'
-
-Plugin 'scrooloose/nerdtree'
 
 Plugin 'w0rp/ale'
 let g:ale_linters_explicit = 1 
@@ -44,7 +42,9 @@ let g:ctrlp_custom_ignore = {
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/log/*,*/\.git/*,*public/assets/lib/*,.irb_history,*/lib/git-core/template/*
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 " Use pymatcher for ctrlp
+Plugin 'FelikZ/ctrlp-py-matcher'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " The Silver Searcher
@@ -60,24 +60,21 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+syntax enable
+
 " Use silver search with ack
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
 Plugin 'janko-m/vim-test'
-let test#strategy = 'iterm'
+let test#strategy = 'vimterminal'
 let test#ruby#minitest#executable = 'bin/tt'
 let test#ruby#rails#executable = 'bin/tt'
 let g:test#runner_commands = ['Minitest']
 map <silent> <Leader>t :TestFile<CR>
 map <silent> <Leader>s :TestNearest<CR>
 map <silent> <Leader>l :call TestLast<CR>
-
-Plugin 'mhinz/vim-signify'
-
-" ### Key bindings
-set macmeta " Allows mapping of Meta (Option) key in MacOS - MacVIM only
 
 "Key bindings
 let mapleader=","

@@ -69,6 +69,7 @@ endif
 
 Plugin 'janko-m/vim-test'
 let test#strategy = 'vimterminal'
+let test#vim#term_position = "belowright"
 let test#ruby#minitest#executable = 'bin/tt'
 let test#ruby#rails#executable = 'bin/tt'
 let g:test#runner_commands = ['Minitest']

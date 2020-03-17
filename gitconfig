@@ -2,6 +2,7 @@
     st = status
     ss = status --short
     ci = commit
+    ca = commit --amend
     br = branch
     co = checkout
     aa = add --all --verbose

@@ -109,6 +109,7 @@ augroup gitsetup
                         \ let &l:textwidth = line('.') == 1 ? 50 : 72
 augroup end
 
+set clipboard=unnamed " Mac OS X clipboard sharing
 set number " show line number
 set gfn=monaco:h12 " font
 

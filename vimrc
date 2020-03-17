@@ -95,8 +95,8 @@ nnoremap <leader>/ :Ack! -Q "
 " Map F6 to :w, within iterm cmd-s to F6 in iterm
 nnoremap <F6> :w<CR>
 
-" OPT + CMD + p
-autocmd FileType ruby nnoremap <D-M-p> irequire 'pry';binding.pry<Esc>
+"debugger
+autocmd FileType ruby nnoremap <leader>p irequire 'pry';binding.pry<Esc>
 
 " GitCommit 50/72 formatting
 " https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

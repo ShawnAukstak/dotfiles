@@ -9,6 +9,7 @@
     df = diff
     up = "!git remote update -p; git merge --ff-only @{u}"
     mu = "!git up; git checkout master"
+    rbm = rebase master
     df = diff
     ds = diff --staged
     lg = log -p

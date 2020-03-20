@@ -69,6 +69,7 @@ if executable('ag')
 endif
 
 syntax enable
+set termguicolors
 
 " Use silver search with ack
 if executable('ag')

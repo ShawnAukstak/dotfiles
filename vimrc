@@ -104,13 +104,17 @@
     set splitbelow
     set splitright
 
-    "default tab settings
-    set sw=2
-    set softtabstop=2
-    set expandtab
-    "and invisible characters to distinguish tabs and spaces...
-    set list
-    set listchars=tab:>-,trail:·
+    set sw=2                        " Indents are two spaces
+    set softtabstop=2               " Backspace deletes indents
+    set expandtab                   " Tabs are spaces
+
+    set list                        " Show trailing whitespace
+    set listchars=tab:>-,trail:·    " Show trailing whitespace
+
+    set foldenable                  " Auto fold code
+    set foldmethod=indent           " Fold code based on indents
+    set foldlevelstart=10           " Most folds open by default
+    set foldnestmax=10              " Max level of nested folds
 
     filetype plugin indent on
 " }}
@@ -118,15 +122,20 @@
 " Key bindings {{
     let mapleader=","
 
+    " ctrl + j|k|l|h navigates between splits
     nnoremap <C-J> <C-W><C-J>
     nnoremap <C-K> <C-W><C-K>
     nnoremap <C-L> <C-W><C-L>
     nnoremap <C-H> <C-W><C-H>
 
+    " Grep
     nnoremap <leader>/ :Ack! -Q "
 
-    " Map F6 to :w, within iterm cmd-s to F6 in iterm
-    nnoremap <F6> :w<CR>
+    nnoremap <F6> :w<CR> " Map F6 to :w, within iterm cmd-s to F6 in iterm
+
+    " Spacebar on fold will toggle it, else default move right behavior
+    nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+    vnoremap <Space> zf
 " }}
 
 " General {{

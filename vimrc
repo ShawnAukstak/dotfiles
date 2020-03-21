@@ -21,14 +21,15 @@ Plugin 'w0rp/ale'
 Plugin 'ctrlp.vim'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'janko-m/vim-test'
-Plugin 'danilo-augusto/vim-afterglow'
+Plugin 'mileszs/ack.vim'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 call vundle#end()
 
 
 syntax enable
 set termguicolors
-colorscheme afterglow
+colorscheme dracula
 
 " vim-smooth-scroll settings
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
@@ -55,7 +56,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " The Silver Searcher
-Plugin 'mileszs/ack.vim'
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
@@ -115,7 +115,6 @@ augroup end
 
 set clipboard=unnamed " Mac OS X clipboard sharing
 set number " show line number
-set gfn=monaco:h12 " font
 
 "default tab settings
 set sw=2

@@ -143,6 +143,10 @@
 " Key bindings {{
     let mapleader=","
 
+    " Splits
+    map <Leader>hs :split<CR>
+    map <Leader>vs :vsplit<CR>
+
     " ctrl + j|k|l|h navigates between splits
     nnoremap <C-J> <C-W><C-J>
     nnoremap <C-K> <C-W><C-K>
@@ -150,8 +154,9 @@
     nnoremap <C-H> <C-W><C-H>
 
     " Tabs
-    nnoremap <C-t>     :tabnew<CR>
-    inoremap <C-t>     <Esc>:tabnew<CR>
+    nnoremap <C-t>  :tabnew<CR>
+    inoremap <C-t>  <Esc>:tabnew<CR>
+    map <Leader>tc  :tabclose<CR>
     nmap th gT
     nmap tl gt
 

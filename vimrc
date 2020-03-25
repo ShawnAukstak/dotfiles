@@ -11,6 +11,8 @@
     Plugin 'Commentary.vim'
     Plugin 'RRethy/vim-illuminate'
     Plugin 'tpope/vim-endwise'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-rhubarb' " fugitive GitHub plugin
     Plugin 'vim-ruby/vim-ruby'
     Plugin 'aserebryakov/vim-todo-lists'
     Plugin 'mhinz/vim-signify'

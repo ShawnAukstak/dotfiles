@@ -145,6 +145,9 @@
 " Key bindings {{
     let mapleader=","
 
+    map <leader>q :q<CR>
+    nnoremap ; :
+
     " Splits
     map <Leader>hs :split<CR>
     map <Leader>vs :vsplit<CR>

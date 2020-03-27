@@ -1,6 +1,7 @@
 [alias]
     st = status
-    ss = status --short
+    ss = stash save -u
+    sl = stash list
     ci = commit
     ca = commit --amend
     br = branch

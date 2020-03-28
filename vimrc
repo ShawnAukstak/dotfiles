@@ -177,12 +177,14 @@
 
 " General {{
     set clipboard=unnamed " Mac OS X clipboard sharing
-    set number " show line number
+    " Hybrid line numbers
+    set number relativenumber
+    set nu rnu
 " }}
 
 " Autocmds {{
     "debugger
-    autocmd FileType ruby nnoremap <leader>p irequire 'pry';binding.pry<Esc>
+    autocmd FileType ruby nnoremap <leader>d irequire 'pry';binding.pry<Esc>
 
     " GitCommit 50/72 formatting
     " https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

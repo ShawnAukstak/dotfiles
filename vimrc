@@ -25,6 +25,7 @@
     Plugin 'janko-m/vim-test'
     Plugin 'mileszs/ack.vim'
     Plugin 'dracula/vim', { 'name': 'dracula' }
+    Plugin 'takac/vim-hardtime'
 
     call vundle#end()
 " }}
@@ -87,6 +88,12 @@
         noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
         noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
         noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+    " }}
+
+    " vim-hardtime {{
+        let g:hardtime_default_on = 1
+        let g:hardtime_maxcount = 2
+        let g:hardtime_showmsg = 1
     " }}
 
     " vim-test {{

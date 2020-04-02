@@ -92,7 +92,8 @@
 
     " vim-hardtime {{
         let g:hardtime_default_on = 1
-        let g:hardtime_maxcount = 2
+        let g:hardtime_maxcount = 4
+        let g:hardtime_timeout = 500
         let g:hardtime_showmsg = 1
     " }}
 
@@ -113,10 +114,7 @@
           set grepprg=ag\ --nogroup\ --nocolor
 
           " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-          " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-          " ag is fast enough that CtrlP doesn't need to cache
-          let g:ctrlp_use_caching = 0
+          let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
         endif
 
         " Use silver search with ack

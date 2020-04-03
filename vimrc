@@ -151,7 +151,6 @@
     let mapleader=","
 
     map <leader>q :q<CR>
-    nnoremap ; :
 
     " Splits
     map <Leader>hs :split<CR>

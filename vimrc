@@ -172,7 +172,9 @@
     " Grep
     nnoremap <leader>/ :Ack! -Q "
 
-    nnoremap <F6> :w<CR> " Map F6 to :w, within iterm cmd-s to F6 in iterm
+    " Map F6 to :update, within iterm cmd-s to F6 in iterm
+    nnoremap <F6> :update<CR>
+    inoremap <F6> <Esc>:update<cr>gi
 
     " Spacebar on fold will toggle it, else default move right behavior
     nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>

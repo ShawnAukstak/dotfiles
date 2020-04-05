@@ -3,6 +3,7 @@ export PATH=/usr/local/bin:$PATH
 
 export EDITOR=vim
 set keymap vi
+set -o vi
 
 # Configure colors, if available.
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then

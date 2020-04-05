@@ -186,6 +186,8 @@
     " Hybrid line numbers
     set number relativenumber
     set nu rnu
+
+    set re=1 "force old regex engine for ctrlp ruby speed https://stackoverflow.com/a/16920294/789447
 " }}
 
 " Autocmds {{

@@ -7,12 +7,13 @@
 
     Plugin 'gmarik/Vundle.vim'
     Plugin 'rails.vim'
-    Plugin 'surround.vim'
     Plugin 'Commentary.vim'
     Plugin 'RRethy/vim-illuminate'
     Plugin 'tpope/vim-endwise'
     Plugin 'tpope/vim-fugitive'
     Plugin 'tpope/vim-rhubarb' " fugitive GitHub plugin
+    Plugin 'tpope/vim-surround'
+    Plugin 'tpope/vim-repeat'
     Plugin 'vim-ruby/vim-ruby'
     Plugin 'aserebryakov/vim-todo-lists'
     Plugin 'mhinz/vim-signify'

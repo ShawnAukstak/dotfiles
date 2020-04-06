@@ -27,6 +27,7 @@
     Plugin 'mileszs/ack.vim'
     Plugin 'dracula/vim', { 'name': 'dracula' }
     Plugin 'takac/vim-hardtime'
+    Plugin 'JamshedVesuna/vim-markdown-preview'
 
     call vundle#end()
 " }}
@@ -84,18 +85,23 @@
         nmap <leader>+ <Plug>AirlineSelectNextTab
     " }}
 
-    " vim-smooth-scroll {{
-        noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-        noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
-        noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-        noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
-    " }}
-
     " vim-hardtime {{
         let g:hardtime_default_on = 1
         let g:hardtime_maxcount = 4
         let g:hardtime_timeout = 500
         let g:hardtime_showmsg = 1
+    " }}
+
+    " vim-markdown-preview {{
+        let vim_markdown_preview_github=1
+        let vim_markdown_preview_hotkey='<C-m>'
+    " }}
+
+    " vim-smooth-scroll {{
+        noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+        noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+        noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+        noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
     " }}
 
     " vim-test {{

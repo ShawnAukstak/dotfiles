@@ -4,6 +4,7 @@
     sl = stash list
     ci = commit
     ca = commit --amend
+    ac = !git add -A && git commit
     br = branch
     co = checkout
     aa = add --all --verbose

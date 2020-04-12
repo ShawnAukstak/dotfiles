@@ -40,5 +40,7 @@ git_prompt ()
 
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007";PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
 
+alias git-rbm='MYBRANCH=`git rev-parse --abbrev-ref HEAD` && rm -f ../.stash-pop-needed && git diff-index --quiet HEAD -- && echo "No changes, skipping command: git stash" || ( git stash && touch ../.stash-pop-needed ) && git checkout master && git fetch && git merge --ff-only origin/master && git checkout $MYBRANCH && git rebase master && ((ls ../.stash-pop-needed && git stash pop) || echo "Skipping command: git stash pop" )'
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"

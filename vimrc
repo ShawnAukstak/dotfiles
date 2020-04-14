@@ -28,6 +28,8 @@
     Plugin 'dracula/vim', { 'name': 'dracula' }
     Plugin 'takac/vim-hardtime'
     Plugin 'JamshedVesuna/vim-markdown-preview'
+    Plugin 'kana/vim-textobj-user'
+    Plugin 'nelstrom/vim-textobj-rubyblock'
 
     call vundle#end()
 " }}
@@ -113,6 +115,10 @@
         map <silent> <Leader>t :TestFile<CR>
         map <silent> <Leader>s :TestNearest<CR>
         map <silent> <Leader>l :call TestLast<CR>
+    " }}
+
+    " vim-textobj-rubyblock {{
+        runtime macros/matchit.vim
     " }}
 
     " Silver Searcher {{

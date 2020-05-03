@@ -186,8 +186,8 @@
     nnoremap <leader>/ :Ack! -Q "
 
     " Map F6 to :update, within iterm cmd-s to F6 in iterm
-    nnoremap <F6> :update<CR>
-    inoremap <F6> <Esc>:update<cr>gi
+    nnoremap <F6> :update<CR> <Esc>
+    inoremap <F6> <Esc>:update<cr>gi <Esc>
 
     " Spacebar on fold will toggle it, else default move right behavior
     nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>

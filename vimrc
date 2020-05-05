@@ -109,8 +109,8 @@
     " vim-test {{
         let test#strategy = 'vimterminal'
         let test#vim#term_position = "belowright"
-        let test#ruby#minitest#executable = 'bin/tt'
-        let test#ruby#rails#executable = 'bin/tt'
+        let test#ruby#minitest#executable = 'bin/rails test'
+        let test#ruby#rails#executable = 'bin/rails test'
         let g:test#runner_commands = ['Minitest']
         map <silent> <Leader>t :TestFile<CR>
         map <silent> <Leader>s :TestNearest<CR>

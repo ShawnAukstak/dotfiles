@@ -30,6 +30,7 @@
     Plugin 'JamshedVesuna/vim-markdown-preview'
     Plugin 'kana/vim-textobj-user'
     Plugin 'nelstrom/vim-textobj-rubyblock'
+    Plugin 'leafgarland/typescript-vim'
 
     call vundle#end()
 " }}

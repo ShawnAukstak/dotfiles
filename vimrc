@@ -109,9 +109,7 @@
     " vim-test {{
         let test#strategy = 'vimterminal'
         let test#vim#term_position = "belowright"
-        let test#ruby#minitest#executable = 'bin/rails test'
-        let test#ruby#rails#executable = 'bin/rails test'
-        let g:test#runner_commands = ['Minitest']
+        let g:test#runner_commands = ['rails']
         map <silent> <Leader>t :TestFile<CR>
         map <silent> <Leader>s :TestNearest<CR>
         map <silent> <Leader>l :call TestLast<CR>
@@ -174,6 +172,9 @@
     nnoremap <C-K> <C-W><C-K>
     nnoremap <C-L> <C-W><C-L>
     nnoremap <C-H> <C-W><C-H>
+    tnoremap <C-K> <C-W><C-K>
+    tnoremap <C-L> <C-W><C-L>
+    tnoremap <C-H> <C-W><C-H>
 
     " Tabs
     nnoremap <C-t>  :tabnew<CR>

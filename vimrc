@@ -31,6 +31,7 @@
     Plugin 'kana/vim-textobj-user'
     Plugin 'nelstrom/vim-textobj-rubyblock'
     Plugin 'leafgarland/typescript-vim'
+    Plugin 'bkad/CamelCaseMotion'
 
     call vundle#end()
 " }}
@@ -133,6 +134,10 @@
         if executable('ag')
           let g:ackprg = 'ag --vimgrep'
         endif
+    " }}
+
+    " CamelCaseMotion {{
+        let g:camelcasemotion_key = '<leader>'
     " }}
 " }}
 

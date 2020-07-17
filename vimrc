@@ -181,8 +181,9 @@
     nnoremap <C-t>  :tabnew<CR>
     inoremap <C-t>  <Esc>:tabnew<CR>
     map <Leader>tc  :tabclose<CR>
-    nmap th gT
-    nmap tl gt
+    nmap <Leader>h gT
+    nmap <Leader>l gt
+    nnoremap <Leader>te <C-W>T
 
     " Grep
     nnoremap <leader>/ :Ack! -Q "

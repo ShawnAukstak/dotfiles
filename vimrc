@@ -227,3 +227,10 @@
                             \ let &l:textwidth = line('.') == 1 ? 50 : 72
     augroup end
 " }}
+
+" Load untracked vim files
+try
+  source ~/.vim/projects.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry

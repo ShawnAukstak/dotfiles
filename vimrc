@@ -9,6 +9,7 @@
     Plugin 'rails.vim'
     Plugin 'Commentary.vim'
     Plugin 'RRethy/vim-illuminate'
+    Plugin 'tpope/vim-dispatch'
     Plugin 'tpope/vim-endwise'
     Plugin 'tpope/vim-fugitive'
     Plugin 'tpope/vim-rhubarb' " fugitive GitHub plugin

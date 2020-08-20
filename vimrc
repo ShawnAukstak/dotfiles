@@ -25,6 +25,8 @@
     Plugin 'ctrlp.vim'
     Plugin 'FelikZ/ctrlp-py-matcher'
     Plugin 'janko-m/vim-test'
+    Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plugin 'junegunn/fzf.vim'
     Plugin 'mileszs/ack.vim'
     Plugin 'dracula/vim', { 'name': 'dracula' }
     Plugin 'takac/vim-hardtime'

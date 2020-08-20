@@ -193,6 +193,8 @@
     nmap tl gt
     nnoremap <Leader>te <C-W>T
 
+    map <Leader>hi :History<CR>
+
     " Grep
     nnoremap <leader>/ :Ack! -Q "
 

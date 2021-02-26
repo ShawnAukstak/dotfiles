@@ -45,4 +45,6 @@ alias git-rbm='MYBRANCH=`git rev-parse --abbrev-ref HEAD` && rm -f ../.stash-pop
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+alias composer="php /usr/local/bin/composer.phar"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

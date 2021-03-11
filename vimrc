@@ -35,6 +35,7 @@
     Plugin 'nelstrom/vim-textobj-rubyblock'
     Plugin 'leafgarland/typescript-vim'
     Plugin 'bkad/CamelCaseMotion'
+    Plugin 'luochen1990/rainbow'
 
     call vundle#end()
 " }}
@@ -141,6 +142,10 @@
 
     " CamelCaseMotion {{
         let g:camelcasemotion_key = '<leader>'
+    " }}
+
+    " Rainbow Parenthesis Improved {{
+        let g:rainbow_active = 0
     " }}
 " }}
 

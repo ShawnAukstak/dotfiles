@@ -45,9 +45,7 @@
         let g:airline#extensions#ale#enabled = 1
         let g:ale_linters_explicit = 1
         let g:ale_sign_column_always = 1
-        let g:ale_linters = { 'ruby': ['rubocop'], 'python': ['flake8'] }
-        let g:ale_ruby_rubocop_executable = '/Users/shawnaukstak/github/github/bin/rubocop'
-        let g:ale_fixers = { "*": ["remove_trailing_lines", "trim_whitespace"], 'python': ['autopep8'] }
+        let g:ale_fixers = { "*": ["remove_trailing_lines", "trim_whitespace"] }
         let g:ale_fix_on_save = 1
     " }}
 
@@ -223,9 +221,6 @@
 " }}
 
 " Autocmds {{
-    "debugger
-    autocmd FileType ruby nnoremap <leader>d irequire 'pry';binding.pry<Esc>
-
     " GitCommit 50/72 formatting
     " https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
     augroup gitsetup

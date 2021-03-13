@@ -1,4 +1,5 @@
 " vim:foldmarker={{,}}:foldmethod=marker:foldlevel=0
+  let mapleader=","
 
 " Vim Vundle {{
     set rtp+=~/.vim/bundle/Vundle.vim
@@ -36,6 +37,7 @@
     Plugin 'leafgarland/typescript-vim'
     Plugin 'bkad/CamelCaseMotion'
     Plugin 'luochen1990/rainbow'
+    Plugin 'ycm-core/YouCompleteMe'
 
     call vundle#end()
 " }}
@@ -113,7 +115,6 @@
     " vim-test {{
         let test#strategy = 'vimterminal'
         let test#vim#term_position = "belowright"
-        let g:test#runner_commands = ['rails']
         map <silent> <Leader>t :TestFile<CR>
         map <silent> <Leader>s :TestNearest<CR>
         map <silent> <Leader>l :call TestLast<CR>
@@ -145,6 +146,10 @@
     " Rainbow Parenthesis Improved {{
         let g:rainbow_active = 0
     " }}
+
+    " YouCompleteMe {{
+        map <Leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+    " }}
 " }}
 
 " UI {{
@@ -171,8 +176,6 @@
 " }}
 
 " Key bindings {{
-    let mapleader=","
-
     map <leader>q :q<CR>
 
     " Splits

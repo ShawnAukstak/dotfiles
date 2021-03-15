@@ -115,9 +115,9 @@
     " vim-test {{
         let test#strategy = 'vimterminal'
         let test#vim#term_position = "belowright"
-        map <silent> <Leader>t :TestFile<CR>
-        map <silent> <Leader>s :TestNearest<CR>
-        map <silent> <Leader>l :call TestLast<CR>
+        map <silent> <Bslash>t :TestFile<CR>
+        map <silent> <Bslash>s :TestNearest<CR>
+        map <silent> <Bslash>l :call TestLast<CR>
     " }}
 
     " vim-textobj-rubyblock {{

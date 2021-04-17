@@ -69,10 +69,10 @@
         let NERDTreeShowHidden=1
         let NERDTreeRespectWildIgnore=1
         let g:airline#extensions#nerdtree_status = 1
-        nnoremap <Leader>nt :NERDTreeToggle<CR>
-        nnoremap <Leader>nn :NERDTreeClose<CR>
-        nnoremap <Leader>nf :NERDTreeFind<CR>
-        nnoremap <Leader>be :BufExplorer<CR>
+        nnoremap <Bslash>nt :NERDTreeToggle<CR>
+        nnoremap <Bslash>nn :NERDTreeClose<CR>
+        nnoremap <Bslash>nf :NERDTreeFind<CR>
+        nnoremap <Bslash>be :BufExplorer<CR>
     " }}
 
     " vim-airline {{

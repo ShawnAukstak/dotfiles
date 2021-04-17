@@ -66,6 +66,7 @@
     " }}
 
     " NerdTree {{
+        let NERDTreeShowHidden=1
         let g:airline#extensions#nerdtree_status = 1
         nnoremap <Leader>nt :NERDTreeToggle<CR>
         nnoremap <Leader>nn :NERDTreeClose<CR>

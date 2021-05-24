@@ -1,0 +1,31 @@
+    map <leader>q :q<CR>
+
+    " Splits
+    nnoremap <Leader>hs :split<CR>
+    nnoremap <Leader>vs :vsplit<CR>
+
+    " ctrl + j|k|l|h navigates between splits
+    nnoremap <C-J> <C-W><C-J>
+    nnoremap <C-K> <C-W><C-K>
+    nnoremap <C-L> <C-W><C-L>
+    nnoremap <C-H> <C-W><C-H>
+    tnoremap <C-K> <C-W><C-K>
+    tnoremap <C-L> <C-W><C-L>
+    tnoremap <C-H> <C-W><C-H>
+
+    " " Tabs
+    nnoremap <C-t>  :tabnew<CR>
+    inoremap <C-t>  <Esc>:tabnew<CR>
+    map <Leader>tc  :tabclose<CR>
+    nmap th gT
+    nmap tl gt
+    nnoremap <Leader>te <C-W>T
+
+    map <Leader>hi :History<CR>
+
+    " " Grep
+    nnoremap <leader>/ :Ack! -Q "
+
+    " " Map F6 to :update, within iterm cmd-s to F6 in iterm
+    nnoremap <F6> :update<CR> <Esc>
+    inoremap <F6> <Esc>:update<cr>gi <Esc>

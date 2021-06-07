@@ -10,4 +10,5 @@
 [._]sw[a-p]
 [._]sw[a-p]
 
+.vimrc
 *.todo

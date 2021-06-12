@@ -1,5 +1,5 @@
 " debugger
-nnoremap <leader>d irequire 'byebug';byebug<Esc>
+nnoremap <leader>d irequire 'pry';binding.pry<Esc>
 
 " vim-test
 let g:test#runner_commands = ['rails']

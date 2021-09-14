@@ -68,6 +68,11 @@
         let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
     " }}
 
+
+    " emmet-vim {{
+        let g:user_emmet_leader_key='<C-E>'
+    " }}
+
     " NerdTree {{
         let NERDTreeShowHidden=1
         let NERDTreeRespectWildIgnore=1

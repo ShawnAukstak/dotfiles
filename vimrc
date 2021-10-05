@@ -39,6 +39,7 @@
     Plugin 'bkad/CamelCaseMotion'
     Plugin 'luochen1990/rainbow'
     Plugin 'ycm-core/YouCompleteMe'
+    Plugin 'nathanaelkane/vim-indent-guides'
 
     call vundle#end()
 " }}

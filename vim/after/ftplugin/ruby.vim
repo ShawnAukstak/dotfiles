@@ -5,9 +5,10 @@ nnoremap <leader>d irequire 'pry';binding.pry<Esc>
 let g:test#runner_commands = ['rails']
 
 " ale
-let b:ale_linters = ['rubocop']
-let b:ale_fixers = ['rubocop']
+let b:ale_linters = ['rubocop', 'erblint']
+let b:ale_fixers = ['rubocop'] # erblint fixer not yet added https://github.com/dense-analysis/ale/pull/3931#issuecomment-939463872
 let b:ale_ruby_rubocop_executable = 'bin/rubocop'
+let b:ale_ruby_erblint_executable = 'bin/erblint'
 
  " setlocal omnifunc=rubycomplete#Complete
 " let g:rubycomplete_buffer_loading = 1

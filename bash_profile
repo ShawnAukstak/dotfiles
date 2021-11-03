@@ -49,6 +49,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 alias composer="php /usr/local/bin/composer.phar"
+alias lt="bin/rubocop -A && script/lint-and-test"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

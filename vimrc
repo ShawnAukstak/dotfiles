@@ -65,6 +65,7 @@
           \ 'file': '\.so$\|\.dat$|\.DS_Store$'
           \ }
         set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/log/*,*/\.git/*,*public/assets/lib/*,.irb_history,*/lib/git-core/template/*
+        let g:ctrlp_use_caching = 0
         let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
         let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
         let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }

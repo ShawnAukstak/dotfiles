@@ -11,6 +11,7 @@
     df = diff
     up = "!git remote update -p; git merge --ff-only @{u}"
     mu = "!git up; git checkout master"
+    po = push -u origin HEAD
     rbm = rebase master
     df = diff
     ds = diff --staged

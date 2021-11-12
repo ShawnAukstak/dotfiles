@@ -1,6 +1,9 @@
 " debugger
 nnoremap <leader>d irequire 'pry';binding.pry<Esc>
 
+:command Frt :normal gg O# frozen_string_literal: true<CR><ESC>x
+map <leader>fs :Frt<CR>
+
 " vim-test
 let g:test#runner_commands = ['rails']
 

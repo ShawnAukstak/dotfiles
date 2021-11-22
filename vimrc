@@ -30,6 +30,7 @@
     Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plugin 'junegunn/fzf.vim'
     Plugin 'mattn/emmet-vim'
+    Plugin 'amadeus/vim-mjml'
     Plugin 'mileszs/ack.vim'
     Plugin 'dracula/vim', { 'name': 'dracula' }
     Plugin 'takac/vim-hardtime'

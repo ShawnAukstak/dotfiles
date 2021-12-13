@@ -28,3 +28,12 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+bindkey -v
+bindkey "^R" history-incremental-pattern-search-backward
+
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+HISTFILE=~/.zsh_history

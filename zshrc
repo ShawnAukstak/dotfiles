@@ -37,3 +37,4 @@ setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 HISTFILE=~/.zsh_history
+source /usr/local/share/zsh/site-functions/_aws

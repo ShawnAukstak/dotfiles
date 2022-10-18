@@ -72,6 +72,9 @@
         let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
     " }}
 
+    " Copilot {{
+        let g:copilot_node_command = "/opt/homebrew/opt/node@16/bin/node""
+    " }}
 
     " emmet-vim {{
         let g:user_emmet_leader_key='<C-E>'

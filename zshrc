@@ -9,6 +9,7 @@ fi
 # Increase open files.
 ulimit -n 4096
 
+alias python="python3"
 source /Users/shawnaukstak/.zsh-git-prompt/zshrc-git-prompt.sh
 PROMPT='%B%m%~%b$(git_super_status) %# '
 
@@ -37,4 +38,4 @@ setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 HISTFILE=~/.zsh_history
-source /usr/local/share/zsh/site-functions/_aws
+# source /usr/local/share/zsh/site-functions/_aws

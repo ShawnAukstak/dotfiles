@@ -17,7 +17,6 @@ alias git-rbm='MYBRANCH=`git rev-parse --abbrev-ref HEAD` && rm -f ../.stash-pop
 
 eval "$(rbenv init -)"
 
-alias composer="php /usr/local/bin/composer.phar"
 alias lt="script/lint-and-test"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

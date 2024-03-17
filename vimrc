@@ -219,7 +219,7 @@
     map <Leader>hi :History<CR>
 
     " Grep
-    nnoremap <leader>/ :Ack! --ignore-dir "public/packs" --ignore-dir "public/packs-test" --ignore-dir "log/" --ignore-dir "tmp/" -Q "
+    nnoremap <leader>/ :Ack! --ignore-dir "public/packs" --ignore-dir "public/packs-test" --ignore-dir "log/" --ignore-dir "tmp/" --ignore-dir "venv/" -Q "
 
     " Map F6 to :update, within iterm cmd-s to F6 in iterm
     nnoremap <F6> :update<CR> <Esc>
